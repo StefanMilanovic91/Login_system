@@ -12,6 +12,7 @@ app.use(express.json());
 
 // routes
 app.use('/user', require('./routes/auth'));
+app.use('/private', require('./routes/private'));
 
 
 const PORT = process.env.PORT || 5000;
